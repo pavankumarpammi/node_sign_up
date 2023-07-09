@@ -31,7 +31,7 @@ app.get("/",function(req,res)
   const url = "https://us21.api.mailchimp.com/3.0/lists/559d48c4ed"
   const option={
     method:"POST",
-    auth:"pavan:ae2644dbdb3f7b86f6508ffe1111931d-us21"
+    auth:"pavan:0541848ef095a0436708e37d6bcef89b-us21"
   }
 
   const request =https.request(url,option,function(response)
@@ -63,10 +63,6 @@ app.get("/",function(req,res)
 request.write(jsonData);
 request.end();
 
-
-
-//     console.log(fname+" "+email+" "+pass);
-// console.log(jsonData);
 });
 
 
@@ -81,7 +77,8 @@ app.listen(process.env.PORT||3000,function()
 });
 
 // api key
-//ae2644dbdb3f7b86f6508ffe1111931d-us21
+//0541848ef095a0436708e37d6bcef89b-us21
 
 //auidance // IDEA:
+//559d48c4ed
 //559d48c4ed
